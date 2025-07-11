@@ -103,32 +103,32 @@ MIT License
 createProject(string name, string metadataURI)
 Đăng ký dự án rừng mới với metadata IPFS.
 
-📥 createProject("Mangrove Forest", "ipfs://Qm...") – Tạo dự án “Mangrove Forest”.
+📥 `createProject("Mangrove Forest", "ipfs://Qm...")` – Tạo dự án “Mangrove Forest”.
 
 confirmData(uint256 projectId)
 Validator xác nhận dữ liệu dự án.
 
-✅ confirmData(1) – Xác nhận dữ liệu cho projectId = 1.
+✅ `confirmData(1)` – Xác nhận dữ liệu cho `projectId = 1`.
 
 challengeData(uint256 projectId)
 Validator thách thức tính hợp lệ của dữ liệu.
 
-🚫 challengeData(1) – Thách thức dự án projectId = 1.
+🚫 `challengeData(1)` – Thách thức dự án `projectId = 1`.
 
 mintCarbonCredits(address to, uint256 projectId, uint256 amount)
 Phát hành token tín chỉ carbon cho địa chỉ ví.
 
-🌱 mintCarbonCredits("0xAbc...123", 1, 50) – Phát hành 50 token cho ví 0xAbc...123.
+🌱 `mintCarbonCredits("0xAbc...123", 1, 50)` – Phát hành 50 token cho ví `0xAbc...123`.
 
 burnCarbonCredits(address from, uint256 projectId, uint256 amount)
 Đốt token tín chỉ carbon để bù đắp CO₂.
 
-🔥 burnCarbonCredits("0xAbc...123", 1, 10) – Đốt 10 token từ ví 0xAbc...123.
+🔥 `burnCarbonCredits("0xAbc...123", 1, 10)` – Đốt 10 token từ ví `0xAbc...123`.
 
 rewardValidator(address validator, uint256 amount)
 Thưởng token ERC20 cho validator.
 
-🎁 rewardValidator("0xValidator456...789", 100) – Thưởng 100 token cho validator.
+🎁 `rewardValidator("0xValidator456...789", 100)` – Thưởng 100 token cho validator.
 
 -----
 ## 📚 Một số thuật ngữ quan trọng
