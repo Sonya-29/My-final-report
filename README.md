@@ -100,7 +100,6 @@ MIT License
 
 ## ⚙️ Ví dụ sử dụng các hàm chính
 
-```solidity
 createProject("Mangrove Forest", "ipfs://Qm...")
 // Đăng ký dự án rừng với metadata gồm tên và IPFS chứa dữ liệu vệ tinh/LiDAR
 
@@ -118,13 +117,16 @@ burnCarbonCredits("0xAbc...123", 1, 10)
 
 rewardValidator("0xValidator456...789", 100)
 // Thưởng 100 token cho validator vì tham gia xác minh
----
 
 ## 📚 Một số thuật ngữ quan trọng
+Token OFP: Đại diện cho tín chỉ carbon, mỗi token = 1 tấn CO₂ đã hấp thụ.
 
-- **Token OFP**: Đại diện cho tín chỉ carbon, mỗi token = 1 tấn CO₂ đã hấp thụ.  
-- **MRV (Monitoring, Reporting, Verification)**: Giám sát – Báo cáo – Xác minh.  
-- **Validator**: Các node tham gia xác minh, stake token để bỏ phiếu.  
-- **Ex-post Credit**: Tín chỉ carbon chỉ được phát hành sau khi quá trình hấp thụ CO₂ thực sự xảy ra và được xác minh.  
-- **Greenwashing**: Hành vi gian lận môi trường – cố ý “tẩy xanh” nhằm đạt lợi ích tài chính.  
-- **IPFS**: Hệ thống lưu trữ phi tập trung, bảo đảm dữ liệu MRV bất biến.  
+MRV (Monitoring, Reporting, Verification): Giám sát – Báo cáo – Xác minh.
+
+Validator: Các node tham gia xác minh, stake token để bỏ phiếu.
+
+Ex-post Credit: Tín chỉ carbon chỉ được phát hành sau khi quá trình hấp thụ CO₂ thực sự xảy ra và được xác minh.
+
+Greenwashing: Hành vi gian lận môi trường – cố ý “tẩy xanh” nhằm đạt lợi ích tài chính.
+
+IPFS: Hệ thống lưu trữ phi tập trung, bảo đảm dữ liệu MRV bất biến.
