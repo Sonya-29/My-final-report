@@ -1,4 +1,5 @@
 🌳 Open Forest Protocol – Dự án Carbon Credit Blockchain
+
 Dự án này phát triển nền tảng quản lý – giám sát – xác minh – báo cáo (MRV) tín chỉ carbon trên blockchain NEAR, với mục tiêu số hóa và minh bạch hóa tín chỉ carbon tự nhiên (nature-based credits), thúc đẩy các hoạt động trồng rừng, phục hồi rừng và hấp thụ CO₂ bền vững.
 
 🎯 Mục tiêu dự án Giải quyết các vấn đề nan giải của thị trường tín chỉ carbon truyền thống: thiếu minh bạch, chi phí MRV cao, greenwashing… bằng cách ứng dụng blockchain để:
