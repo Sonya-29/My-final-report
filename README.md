@@ -35,7 +35,6 @@ Giải quyết các vấn đề nan giải của thị trường tín chỉ carb
 
 - `contracts/OpenForestToken.sol`: Hợp đồng quản lý phát hành tín chỉ carbon.
 - `README.md`: Tổng quan dự án và hướng dẫn triển khai.
-- `apps/ForesterApp`: Ứng dụng thu thập dữ liệu thực địa phục vụ MRV.
 
 ---
 
