@@ -100,24 +100,37 @@ MIT License
 
 ## ⚙️ Ví dụ sử dụng các hàm chính
 
-createProject("Mangrove Forest", "ipfs://Qm...")
-// Đăng ký dự án rừng với metadata gồm tên và IPFS chứa dữ liệu vệ tinh/LiDAR
+createProject(string name, string metadataURI)
+Đăng ký dự án rừng mới với metadata IPFS.
 
-confirmData(1)
-// Validator xác nhận dữ liệu cho dự án có projectId = 1
+📥 createProject("Mangrove Forest", "ipfs://Qm...") – Tạo dự án “Mangrove Forest”.
 
-challengeData(1)
-// Validator thách thức dữ liệu nếu phát hiện sai lệch
+confirmData(uint256 projectId)
+Validator xác nhận dữ liệu dự án.
 
-mintCarbonCredits("0xAbc...123", 1, 50)
-// Phát hành 50 token tín chỉ carbon cho địa chỉ ví từ dự án số 1
+✅ confirmData(1) – Xác nhận dữ liệu cho projectId = 1.
 
-burnCarbonCredits("0xAbc...123", 1, 10)
-// Đốt 10 token từ ví để ghi nhận hành động bù đắp CO₂
+challengeData(uint256 projectId)
+Validator thách thức tính hợp lệ của dữ liệu.
 
-rewardValidator("0xValidator456...789", 100)
-// Thưởng 100 token cho validator vì tham gia xác minh
+🚫 challengeData(1) – Thách thức dự án projectId = 1.
 
+mintCarbonCredits(address to, uint256 projectId, uint256 amount)
+Phát hành token tín chỉ carbon cho địa chỉ ví.
+
+🌱 mintCarbonCredits("0xAbc...123", 1, 50) – Phát hành 50 token cho ví 0xAbc...123.
+
+burnCarbonCredits(address from, uint256 projectId, uint256 amount)
+Đốt token tín chỉ carbon để bù đắp CO₂.
+
+🔥 burnCarbonCredits("0xAbc...123", 1, 10) – Đốt 10 token từ ví 0xAbc...123.
+
+rewardValidator(address validator, uint256 amount)
+Thưởng token ERC20 cho validator.
+
+🎁 rewardValidator("0xValidator456...789", 100) – Thưởng 100 token cho validator.
+
+-----
 ## 📚 Một số thuật ngữ quan trọng
 Token OFP: Đại diện cho tín chỉ carbon, mỗi token = 1 tấn CO₂ đã hấp thụ.
 
